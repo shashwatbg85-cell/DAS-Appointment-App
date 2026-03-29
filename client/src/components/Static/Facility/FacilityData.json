@@ -1,0 +1,35 @@
+[
+    {
+        "title":"Genral Care",
+        "icon":"fa-solid fa-user-doctor"
+    },
+    {
+        "title":"Pathalogy Lab",
+        "icon":"fa-solid fa-flask"
+    },
+    {
+        "title":"Dental Care",
+        "icon":"fa-solid fa-tooth"
+    },
+    {
+        "title":"24X7 Emergency",
+        "icon":"fa-solid fa-truck-medical"
+    },
+    {
+        "title":"Heart Issue",
+        "icon":"fa-solid fa-heart-pulse"
+    },
+    {
+        "title":"Neurology",
+        "icon":"fa-solid fa-brain"
+    },
+    {
+        "title":"Rhematology",
+        "icon":"fa-solid fa-bone"
+    },
+    {
+        "title":"Eye care",
+        "icon":"fa-solid fa-eye"
+    }
+]
+

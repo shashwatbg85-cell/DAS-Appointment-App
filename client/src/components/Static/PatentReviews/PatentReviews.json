@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "name":"Shivansh",
+        "address":"Local",
+        "commentTile":"Great Service",
+        "commentDescription":"best service in city",
+        "rating":5,
+        "pic":"https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png"
+    }, 
+    
+    {
+        "id":2,
+        "name":"Muskan",
+        "address":"Local",
+        "commentTile":"Great Service",
+        "commentDescription":"best service in city",
+        "rating":5,
+        "pic":"https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png"
+    },  
+    
+    {
+        "id":3,
+        "name":"Sahil",
+        "address":"Local",
+        "commentTile":"Great Service",
+        "commentDescription":"best service in city",
+        "rating":5,
+        "pic":"https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png"
+    }
+]

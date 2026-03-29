@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "name":"Shivansh Tiwari",
+        "speciality": "Eye care",
+        "pic":"https://up.yimg.com/ib/th/id/OIP.CHvc3-bynhXooTHKJZ94QgHaHa?pid=Api&rs=1&c=1&qlt=95&w=121&h=121",
+        "degree":"MD in Eye Care",
+        "about":"good Care",
+        "experience":2,
+        "available":true,
+        "fee":1000000,
+        "icon":"fa-solid fa-eye"
+    }
+]
