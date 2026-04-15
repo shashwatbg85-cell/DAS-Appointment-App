@@ -4,20 +4,24 @@ import FacilityData from "./FacilityData.json";
 
 const Facility = () => {
   return (
-    <>
-      <h1 className="facilityHeadig">Facilities</h1>
-      <div className="facility-container">
-        {FacilityData.map((d,i) =>(
-            <div className="card" key={i}>
-                <i className={`${d.icon} card-img-top`}></i>
-                <div className="card-body">
-                    <h5 className="card-title">{d.title}</h5>
-                </div>
+    <section className="facility-section">
+      <div className="container">
+        <div className="section-title">
+          <h2>Our Facilities</h2>
+        </div>
+        <div className="facility-grid">
+          {FacilityData.map((d, i) => (
+            <div className="facility-card" key={i}>
+              <div className="icon-wrapper">
+                <i className={d.icon}></i>
+              </div>
+              <h5>{d.title}</h5>
             </div>
-        ))}
-      </div>    
-    </>
- );
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Facility;

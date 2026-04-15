@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Topbar from './Topbar';
 import NavMenu from './NavMenu';
 import { NavLink } from 'react-router';

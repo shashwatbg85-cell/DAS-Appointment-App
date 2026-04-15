@@ -1,13 +1,112 @@
-.review-container{
-    background-color: aliceblue;
-    padding: 40px 0px;
+.review-container {
+  background-color: #f8fbff;
+  padding: 80px 0;
+  overflow: hidden;
 }
 
-.review-container .heading-container{
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.review-container .heading-container {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.review-container .icon{
-    color: rgba(231,182,4,0.9);
+.review-container .heading-container p {
+  color: #008080;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.review-container .heading-container h1 {
+  font-weight: 800;
+  color: #2b2b2b;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 128, 128, 0.1);
+}
+
+.user-pic-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-pic-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info h6 {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.user-info span {
+  font-size: 0.85rem;
+  color: #777;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.star-rating {
+  color: #ffc107;
+  margin-bottom: 20px;
+}
+
+.comment-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 15px;
+}
+
+.comment-text {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.comment-text::before {
+  content: "“";
+  font-size: 2rem;
+  color: #008080;
+  opacity: 0.3;
+  line-height: 0;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

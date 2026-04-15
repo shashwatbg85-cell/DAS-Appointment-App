@@ -1,10 +1,10 @@
 [
     {
-        "title":"Genral Care",
+        "title":"General Care",
         "icon":"fa-solid fa-user-doctor"
     },
     {
-        "title":"Pathalogy Lab",
+        "title":"Pathology Lab",
         "icon":"fa-solid fa-flask"
     },
     {
@@ -24,12 +24,11 @@
         "icon":"fa-solid fa-brain"
     },
     {
-        "title":"Rhematology",
+        "title":"Rheumatology",
         "icon":"fa-solid fa-bone"
     },
     {
-        "title":"Eye care",
+        "title":"Eye Care",
         "icon":"fa-solid fa-eye"
     }
 ]
-

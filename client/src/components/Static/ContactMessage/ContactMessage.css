@@ -1,36 +1,114 @@
-.message-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px 0px;
+.message-container {
+  margin: 40px auto;
+  max-width: 1200px;
 }
 
-.location-map{
-    box-shadow: 5px 5px rgb(207,207,207);
+.map-wrapper {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  height: 100%;
+  min-height: 450px;
 }
 
-.mform{
-    display: flex;
-    flex-direction: column;   
+.map-wrapper .location-map,
+.map-wrapper iframe {
+  height: 100% !important;
+  width: 100%;
 }
 
-.mform h1{
-    color: teal;
+.mform {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  width: 100%;
 }
 
-.mform input, textarea{
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid lightgray;
+.mform h1 {
+  color: #2b2b2b;
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-size: 2rem;
 }
 
-.mform button{
-    background-color: black;
-    color: white;                                                              
+.mform p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
 }
 
-.mform button:hover{
-    background-color: teal;
-    /*color: white;*/
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.mform input,
+.mform textarea {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: #f8fbff;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.mform input:focus,
+.mform textarea:focus {
+  border-color: #008080;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(0, 128, 128, 0.05);
+}
+
+.mform .submit-btn {
+  background-color: #008080;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 5px 15px rgba(0, 128, 128, 0.2);
+}
+
+.mform .submit-btn:hover {
+  background-color: #006666;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 128, 128, 0.3);
+}
+
+.contact-info-strip {
+  background: linear-gradient(135deg, #008080, #006666);
+  padding: 40px 0;
+  color: white;
+  border-radius: 0 0 50px 50px;
+  margin-bottom: 40px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+}
+
+.info-item i {
+  font-size: 1.4rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .message-container {
+    flex-direction: column;
+    margin: 40px auto;
+  }
 }

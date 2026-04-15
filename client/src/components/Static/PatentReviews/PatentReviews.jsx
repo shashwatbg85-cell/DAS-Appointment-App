@@ -1,40 +1,50 @@
 import React from "react";
 import "./PatentReviews.css";
-import ReviewData from "./PatentReviews.json"
+import ReviewData from "./PatentReviews.json";
 
 const PatentReviews = () => {
+  // Function to render dynamic stars
+  const renderStars = (rating) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      if (i <= Math.floor(rating)) {
+        stars.push(<i key={i} className="fas fa-star"></i>);
+      } else if (i === Math.ceil(rating) && rating % 1 !== 0) {
+        stars.push(<i key={i} className="fas fa-star-half-alt"></i>);
+      } else {
+        stars.push(<i key={i} className="far fa-star"></i>);
+      }
+    }
+    return stars;
+  };
+
   return (
-   <>
     <div className="review-container">
+      <div className="container">
         <div className="heading-container">
-            <p>Testimonial</p>
-            <h1>What Our Patients</h1>
-            <h1>Says About us</h1>
+          <p>Testimonials</p>
+          <h1>What Our Patients</h1>
+          <h1>Say About Us</h1>
         </div>
-        {/*reviews*/}
-        <div className="row why-container">
-        {ReviewData.map((d) => (
-        <div className="col-md-3" key={d.id}>
-            <img src={d.pic} alt="userpic" width={"100px"} />
-            <p>
-                {d.name} <br/> {d.address}
-            </p>
-            <div className="d-flex flex-row">
-                <h6 className="icon">
-                     <span className="fas fa-star active-start"></span>
-                    <span className="fas fa-star active-start"></span>
-                    <span className="fas fa-star active-start"></span>
-                    <span className="fas fa-star active-start"></span>
-                    <span className="fas fa-star-half-alt active-start"></span>
-                </h6>
+
+        <div className="review-grid">
+          {ReviewData.map((d) => (
+            <div className="review-card" key={d.id}>
+              <div className="user-pic-wrapper">
+                <img src={d.pic} alt={d.name} />
+              </div>
+              <div className="star-rating">{renderStars(d.rating)}</div>
+              <div className="user-info">
+                <h6>{d.name}</h6>
+                <span>{d.address}</span>
+              </div>
+              <h2 className="comment-title">{d.commentTile}</h2>
+              <p className="comment-text">{d.commentDescription}</p>
             </div>
-            <h2>{d.commentTile}</h2>
-            <h5>{d.commentDescription}</h5>
+          ))}
         </div>
-        ))}
-        </div>
+      </div>
     </div>
-   </>
   );
 };
 

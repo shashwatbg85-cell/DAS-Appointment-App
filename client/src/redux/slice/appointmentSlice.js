@@ -1,0 +1,54 @@
+import { createSlice } from "@reduxjs/toolkit";
+import {
+  getAllAppointments,
+  getAppointmentDetails,
+} from "../actions/appointmentAction";
+
+const appointmentSlice = createSlice({
+  name: "appointment",
+  initialState: {
+    loading: false,
+    success: false,
+    appointments: null,
+    appointment: null,
+    error: null,
+  },
+  reducers: {
+    reset: (state) => {
+      state.error = null;
+      state.success = false;
+    },
+  },
+  extraReducers: (builder) => {
+    builder
+      //get all appointments
+      .addCase(getAllAppointments.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(getAllAppointments.fulfilled, (state, action) => {
+        state.loading = false;
+        state.success = true;
+        state.appointments = action.payload.appointments;
+      })
+      .addCase(getAllAppointments.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+      })
+      //get appointment details
+      .addCase(getAppointmentDetails.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(getAppointmentDetails.fulfilled, (state, action) => {
+        state.loading = false;
+        state.success = true;
+        state.appointment = action.payload.appointmentDetails;
+      })
+      .addCase(getAppointmentDetails.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+      });
+  },
+});
+
+export const { reset } = appointmentSlice.actions;
+export default appointmentSlice.reducer;

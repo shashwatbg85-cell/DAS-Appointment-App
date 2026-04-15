@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.11.2",
+    "axios": "^1.14.0",
     "date-fns": "^4.1.0",
     "react": "^19.2.4",
     "react-datepicker": "^9.1.0",
     "react-dom": "^19.2.4",
     "react-hot-toast": "^2.6.0",
     "react-photo-album": "^3.1.0",
+    "react-redux": "^9.2.0",
     "react-router": "^7.13.1",
     "swiper": "^12.1.2",
     "yet-another-react-lightbox": "^1.1.1"
