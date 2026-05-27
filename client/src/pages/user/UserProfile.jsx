@@ -82,8 +82,7 @@ const UserProfile = () => {
                 <i className="fa-solid fa-pen-to-square"></i>Edit Profile
               </button>
               <button
-                className="btn ms-3"
-                style={{ backgroundColor: "#8A2BE2", color: "white" }}
+                className="btn btn-primary ms-3"
                 onClick={() => navigate("/user/appointments")}
               >
                 <i className="fa-solid fa-list"></i>
