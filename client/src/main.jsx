@@ -8,7 +8,7 @@ import store from "./redux/store.js";
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/DAS-Appointment-App">
       <App />
     </BrowserRouter>
   </Provider>,

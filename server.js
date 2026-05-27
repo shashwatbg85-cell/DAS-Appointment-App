@@ -21,7 +21,13 @@ const app = express();
 
 //middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://shashwatbg85-cell.github.io"
+  ],
+  credentials: true
+}));
 app.use(morgan("dev"));
 
 //routes
