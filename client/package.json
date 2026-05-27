@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://shashwatbg85-cell.github.io/DAS-Appointment",
+  "homepage": "https://shashwatbg85-cell.github.io/DAS-Appointment-App",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
